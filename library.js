@@ -58,7 +58,7 @@ plugin.load = function (params, callback) {
 
 		params.router.post("/api" + adminRoute + "/assettings", assettings);
 		params.router.post("/api" + adminRoute + "/credentials", credentials);
-		params.router.get("/api/downloads/sasgenerator/",sasGenerator);
+		params.router.get("/discussions/api/downloads/sasgenerator/",sasGenerator);
 
 		callback();
 	});
@@ -320,7 +320,7 @@ function uploadToAzureStorage(filename, rs, callback) {
 				}
 				var response = {
 					name: filename,
-					url:"/api/downloads/sasgenerator?key="+key
+					url:"/discussions/api/downloads/sasgenerator?key="+key
 					//url:"https://" + host + "/nodebb/" + key				
 				};
 
