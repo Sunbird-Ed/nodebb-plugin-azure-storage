@@ -58,7 +58,7 @@ plugin.load = function (params, callback) {
 
 		params.router.post("/api" + adminRoute + "/assettings", assettings);
 		params.router.post("/api" + adminRoute + "/credentials", credentials);
-		params.router.get("/discussions/api/downloads/sasgenerator/",sasGenerator);
+		params.router.get("/api/downloads/sasgenerator/",sasGenerator);
 
 		callback();
 	});
